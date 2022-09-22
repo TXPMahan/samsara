@@ -1,0 +1,14 @@
+/* Basic humidity request 
+can be repeated with Postman collection to gather data over time */
+var settings = {
+  "url": "https://api.samsara.com/v1/sensors/humidity?sensors=278018084737982",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "Bearer samsara_api_ZdKWggthimEyq952gVAJ2SXTkqGcuE"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
